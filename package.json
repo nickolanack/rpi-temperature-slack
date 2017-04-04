@@ -1,0 +1,29 @@
+{
+  "name": "rpi-temperature-slack",
+  "version": "1.0.0",
+  "description": "Log raspberry pi temperature sensor (GPIO) to slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickolanack/rpi-temperature-slack.git"
+  },
+  "keywords": [
+    "slack",
+    "raspberrypi",
+    "gpio",
+    "temperature"
+  ],
+  "author": "Nick Blackwell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickolanack/rpi-temperature-slack/issues"
+  },
+  "homepage": "https://github.com/nickolanack/rpi-temperature-slack#readme",
+  "dependencies": {
+    "node-rpio-temperature": "git://github.com/nickolanack/node-rpio-temperature.git#master",
+    "slack-node": "^0.1.8"
+  }
+}
