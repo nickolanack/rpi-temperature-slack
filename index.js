@@ -7,7 +7,7 @@ slack.setWebhook(require('./slack.json').url);
 
 
 
-var Temperature = require('../');
+var Temperature = require('node-rpio-temperature');
 (new Temperature()).on('update', function(temp) {
 	slack.webhook({
 
