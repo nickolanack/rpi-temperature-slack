@@ -3,7 +3,7 @@ var Slack = require('slack-node');
 
 
 slack = new Slack();
-slack.setWebhook(require('./slack.json').url;
+slack.setWebhook(require('./slack.json').url);
 
 
 
