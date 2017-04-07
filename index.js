@@ -25,9 +25,9 @@ var Temperature = require('node-rpio-temperature');
 			}
 
 		});
-		counter++;
+		
 	}
-
+	
 	
 
 	slack.webhook({
@@ -41,6 +41,8 @@ var Temperature = require('node-rpio-temperature');
 		}
 
 	});
+
+	counter++;
 
 
 });
