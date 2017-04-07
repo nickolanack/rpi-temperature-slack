@@ -17,7 +17,7 @@ var Temperature = require('node-rpio-temperature');
 		slack.webhook({
 			text: + 'Devices: '+ Object.keys(temps).map(function(name){
 				return name.substring(name.length-6);
-			}).join(', ')
+			}).join(',  ')
 		}, function(err, response) {
 
 			if (err) {
@@ -31,9 +31,9 @@ var Temperature = require('node-rpio-temperature');
 	
 
 	slack.webhook({
-		text: Object.keys(temps).map(function(name){
-			return temps[name].value;
-		}).join(', ') + temp.units
+		text: counter + ' ' + Object.keys(temps).map(function(name){
+			return '`' + temps[name].value + '`';
+		}).join(' ') + ' ' + temp.units
 	}, function(err, response) {
 
 		if (err) {
